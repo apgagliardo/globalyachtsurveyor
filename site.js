@@ -73,6 +73,7 @@ document.querySelectorAll('.enquiry-form').forEach(form => {
       status.dataset.state = 'success';
       status.textContent = 'Thank you — your enquiry has been received. Tony will respond using the contact details you provided.';
       form.reset();
+      if (typeof window.gysTrack === 'function') window.gysTrack('Enquiry Sent');
     } catch (error) {
       status.dataset.state = 'error';
       status.textContent = 'Your enquiry could not be confirmed as sent. Your message is still here. Please try again, or contact Tony by email or WhatsApp below.';
