@@ -229,3 +229,56 @@ footer .enquiry-form .form-status:not(:empty){max-width:none;margin:0}
 
 /* Original photographs supplied with Tony's termite article. */
 .termite-photos{margin:2rem 0}.termite-photos figure{margin:0 auto 2rem;max-width:760px}.termite-photos img{display:block;width:100%;height:auto}.termite-photos figcaption{margin-top:.65rem;font-size:.9rem;line-height:1.5;color:inherit;opacity:.9}
+
+/* Tonnage measurement sandbox, 12 October 2026. */
+.tonnage-kicker{color:#ddb894!important;font-size:13px!important;letter-spacing:.07em;text-transform:uppercase;text-align:center;margin-top:18px}
+.tonnage-content .page-lead{text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
+.tonnage-content>div:first-child .article-links{justify-content:center}
+.registry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0 38px}
+.registry-card{display:block;padding:22px 24px;border:1px solid #64798a;background:#ffffff06;text-decoration:none;white-space:normal}
+.registry-card strong{display:block;font-size:20px;margin-bottom:8px}.registry-card>span{display:block;font-size:13px;color:#d4dce2;line-height:1.6}
+.registry-card:hover{background:#ffffff10;border-color:#ddb894}.registry-card:focus-visible{outline:3px solid #80c6e6;outline-offset:3px}
+.tonnage-content .registry-next{border-top:1px solid #64798a;padding-top:10px;margin-top:36px}
+.tonnage-content .button{min-width:0;margin:0}.tonnage-content .article-links a{white-space:normal}
+@media(max-width:760px){.registry-grid{grid-template-columns:1fr}.registry-card{padding:18px 20px}.tonnage-content h1{font-size:29px}.tonnage-content .article-links{gap:12px}.tonnage-kicker{font-size:11px!important}}
+
+/* Simplified shared navigation: consulting, surveys, registration, resources, contact. */
+nav .nav-contact{padding:7px 12px;background:#12516a;color:#fff;border-radius:3px}nav .nav-contact:hover{background:#17364b;color:#fff}
+@media(min-width:761px){header nav{gap:10px 14px}header nav>a,header nav summary{font-size:13px}}
+
+/* Softer corners across the sandbox. */
+:root{--panel-radius:22px;--card-radius:16px;--control-radius:10px}
+.interior article,.owner-path,.owner-needs,.ja-proof{border-radius:var(--panel-radius)}
+.home .hero,.feature{border-radius:var(--panel-radius);overflow:hidden}
+.service-card{border-radius:var(--card-radius)}
+.registry-card,.guide-card,.survey-request,.article-toc{border-radius:var(--card-radius)}
+.button,.article-links a,.hero-actions a,.enquiry-form button,nav .nav-contact{border-radius:999px}
+.enquiry-form input,.enquiry-form textarea,footer .enquiry-form .form-status:not(:empty),nav details>div{border-radius:var(--control-radius)}
+.service-card>h3 a,.service-card:not(.project):last-child>h3{border-radius:8px}
+@media(max-width:760px){:root{--panel-radius:18px;--card-radius:14px}}
+
+/* Country and territory flags beside each registry name. */
+.registry-card strong{display:flex;align-items:center;gap:13px}
+.registry-flag{display:inline-block;flex:0 0 auto;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:31px;line-height:1.2}
+@media(max-width:760px){.registry-flag{font-size:28px}.registry-card strong{gap:11px}}
+
+/* Give the main menu a clearer visual presence. */
+header nav{gap:12px 20px}
+header nav>a,header nav summary{font-size:16px;font-weight:500;line-height:1.5;padding-top:7px;padding-bottom:7px}
+header nav .nav-contact{padding:9px 17px}
+@media(max-width:760px){header nav{gap:8px 16px}header nav>a,header nav summary{font-size:15px;padding-top:5px;padding-bottom:5px}}
+@media(min-width:1101px){header{grid-template-columns:146px minmax(0,1fr) auto;column-gap:28px}header .phone>a{font-size:16px}}
+
+/* Blend the phone icon's white backing into the pale header. */
+header .phone>a img{mix-blend-mode:multiply}
+
+/* Hide social links across the sandbox. */
+.social{display:none}
+
+/* New yacht build and owner representation page. */
+.build-intro{text-align:center}.build-intro>p:not(.build-kicker){max-width:800px;margin-left:auto;margin-right:auto}.build-intro .article-links{justify-content:center}
+.build-kicker{font-size:12px!important;text-transform:uppercase;letter-spacing:1.4px;color:#ddb894}
+.build-background{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:center;margin:48px 0}.build-background figure{margin:0}.build-background img{width:100%;height:auto;border-radius:16px}.build-background figcaption{font-size:12px;color:#d4dce2;margin-top:12px;line-height:1.6}
+.build-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0 40px}.build-grid>div{border:1px solid #64798a;border-radius:16px;padding:22px}.build-grid h3{margin-top:0;color:#ddb894}.build-grid p{margin-bottom:0}
+.build-process{padding-left:24px}.build-process li{padding:0 0 20px 8px;line-height:1.8}.build-process strong{color:#ddb894}
+@media(max-width:760px){.build-background,.build-grid{grid-template-columns:1fr}.build-background{gap:20px}.build-content h1{font-size:29px}.build-grid>div{padding:18px}}

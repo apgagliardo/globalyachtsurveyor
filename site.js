@@ -86,3 +86,8 @@ document.querySelectorAll('.enquiry-form').forEach(form => {
     }
   });
 });
+
+// Keep the footer copyright current in the visitor’s local year.
+document.querySelectorAll("[data-copyright-year]").forEach((element) => {
+  element.textContent = String(new Date().getFullYear());
+});
