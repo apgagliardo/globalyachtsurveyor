@@ -282,3 +282,5 @@ header .phone>a img{mix-blend-mode:multiply}
 .build-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0 40px}.build-grid>div{border:1px solid #64798a;border-radius:16px;padding:22px}.build-grid h3{margin-top:0;color:#ddb894}.build-grid p{margin-bottom:0}
 .build-process{padding-left:24px}.build-process li{padding:0 0 20px 8px;line-height:1.8}.build-process strong{color:#ddb894}
 @media(max-width:760px){.build-background,.build-grid{grid-template-columns:1fr}.build-background{gap:20px}.build-content h1{font-size:29px}.build-grid>div{padding:18px}}
+
+footer .footer-legal{grid-column:1 / -1;padding:16px 28px;text-align:center;font-size:14px}footer .footer-legal a{display:inline;margin:0 8px}
